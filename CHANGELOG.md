@@ -1,3 +1,7 @@
+## v0.2.2 — 2026-08-08
+
+- fix: keep progress bar visible with neutral color and minimum width when password field is empty
+
 ## v0.2.1 — 2026-08-08
 
 - fix: remove skeletton
