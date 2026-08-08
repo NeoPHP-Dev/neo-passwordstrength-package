@@ -1,3 +1,7 @@
+## v0.2.1 — 2026-08-08
+
+- fix: remove skeletton
+
 ## v0.2.0 — 2026-08-08
 
 - docs: add neo-passwordstrength-package README with the three usage levels
