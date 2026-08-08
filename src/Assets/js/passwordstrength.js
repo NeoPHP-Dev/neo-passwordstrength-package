@@ -23,9 +23,11 @@ function initPasswordStrength(root) {
     function update() {
         const { score, criteria } = evaluatePassword(input.value, config);
 
-        const pct = input.value.length === 0 ? 0 : ((score + 1) / 5) * 100;
+        const pct = input.value.length === 0 ? 4 : ((score + 1) / 5) * 100;
         barFill.style.width = pct + '%';
-        barFill.style.background = scoreColors[score];
+        barFill.style.background = input.value.length === 0
+            ? 'var(--ps-track-bg)'
+            : scoreColors[score];
 
         scoreLabel.textContent = input.value.length === 0 ? '' : scoreLabels[score];
         scoreLabel.style.color = scoreColors[score];
